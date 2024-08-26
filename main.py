@@ -5,7 +5,7 @@ st.title("Welcome to the Tip Calculator")
 
 total_bill = st.number_input("What was your total bill?")
 tip_percentage = int(st.number_input("How much tip would you like to give? "))
-people_amount = int(st.number_input("How many people to split the bill? "))
+people_amount = int(st.number_input("How many people to split the bill? ", min_value=1))
 
 final_tip_amount = (tip_percentage / 100 * total_bill + total_bill)
 
